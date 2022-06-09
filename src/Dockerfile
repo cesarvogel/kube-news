@@ -3,5 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+#TESTE
 EXPOSE 8080
 CMD ["node", "server.json"]
