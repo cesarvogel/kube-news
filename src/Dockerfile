@@ -1,8 +1,8 @@
 FROM node:16.14.0
 WORKDIR /app
-COPY package*.json ./
+COPY ./package*.json ./
 RUN npm install
 COPY . .
 #TESTE
 EXPOSE 8080
-CMD ["node", "server.json"]
+CMD ["node", "server.js"]
